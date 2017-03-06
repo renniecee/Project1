@@ -1,0 +1,774 @@
+@import "Partials/setup";
+@import "Partials/variables";
+
+body {
+	font-family: "Raleway", Sans-serif;
+	font-size: 17px;
+	line-height: 32px;
+}
+
+.wrapper {
+	max-width: 1175px;
+	margin: 0 auto;
+	// height: 100%;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Rufina", Serif;
+	font-weight: normal;
+}
+
+h2, h3 {
+	color: $BrandPrimary;
+	margin: 0;
+}
+
+h2 {	
+	font-size: 50px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+ul {
+	padding: 0;
+}
+
+header {
+	background-image: url(../images/hero.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	color: $White;
+	position: relative;
+}
+
+.containerRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 70px;
+}
+
+.hide {
+	text-indent: -99999px;
+}
+
+.hamburger {
+	position: fixed;
+	top: 10px;
+	right: 3%;
+}
+
+.hamburger a {
+	color: white;
+}
+
+.headerContent {
+	padding-top: 160px;
+	height: 720px;
+}
+
+.logo {
+	background-image: url(../assets/logo.png);
+	background-repeat: no-repeat;
+	height: 204px;
+	background-position: center;
+	margin: auto;
+	// background-size: 15%;
+}
+
+.bakerCoffeeText {
+	background-image: url(../assets/bakerycoffee.png);
+	background-repeat: no-repeat;
+	height: 104px;
+	background-position: center;
+	margin: auto;
+	// background-size: 40%;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+header li {
+	display: inline;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-right: 15px;
+
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.hours {
+	background-image: url(../assets/circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 298px;
+	width: 100%;
+	position: relative;
+	transform: translateY(3%);
+}
+
+p.hoursAddress {
+	padding-top: 90px;
+}
+
+p.hoursHours {
+	line-height: 1px;
+}
+
+.overview {
+	background-color: #FDFCF8;
+}
+
+.smallColumn {
+	float: left;
+	width: 33.33%;
+	// height: 540px;
+	padding: 110px 5% 90px 5%;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.smallColumn h3 {
+	color: $BrandSecondary;
+	padding-top: 20px;
+}
+
+.smallColumn p {
+	color: $BrandTer;
+}
+
+.menuSection {
+	background-image: url(../assets/menubg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #252422;
+	color: $White;
+}
+
+.box {
+	background-image: url(../assets/menu.png);
+	background-repeat: no-repeat;
+	background-position:  center 100px;
+	height: 310px;
+	text-align: center;
+		h2 {
+			padding-top: 180px;
+		}
+}
+
+div.price {
+	float: right;
+}
+
+.largeColumn {
+	padding: 60px 3%;
+	width: 49%;
+	margin-bottom: 140px;
+}
+
+.menuSection .largeColumn {
+	position: relative;
+	border: 4px solid $BrandTer;
+}
+
+.menuSection .largeColumn:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	left: 4px;
+	bottom: 4px;
+	border: 1px solid $BrandTer;
+}
+
+.menuSection h3 {
+	border-bottom: 1px solid $BrandPrimary;
+	padding-bottom: 10px;
+	width: 120px;
+}
+
+.largeColumn li {
+	display: block;
+		p {
+			color: $BrandTer;
+			font-size: 12px;
+		}
+}
+
+section.about {
+	background-image: url(../assets/aboutbg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #F0E9D9;
+}
+
+.about .largeColumn {
+	margin: 0;
+		h2 {
+			padding: 50px 0;
+		}
+}
+
+.signature {
+	background-image: url(../assets/signature.png);
+	background-repeat: no-repeat;
+	height: 200px;
+	background-position: left 50px;
+}
+
+section.gallery {
+	background-image: url(../assets/gallerybg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #FDFCF8;
+	padding: 130px 0;
+		.containerRow {
+			padding-top:: 50px;
+		}
+}
+
+aside.small {
+	width: 270px;
+	border: 4px solid $BrandTer;
+	position: relative;
+	max-height: 300px;
+	margin-right: 2%;
+		ul {
+			padding: 0 50px;
+
+		li {
+			// display: block;
+			text-align: right;
+			padding: 10px 5px;
+			direction: rtl;
+			font-family: "Rufina";
+		}
+	}	
+}
+
+aside.small:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	left: 4px;
+	bottom: 4px;
+	border: 1px solid $BrandTer;
+}
+
+div.gallerySmall {
+	width: 75%;
+	// height: 580px;
+		img {
+			width: 33.33%;
+			vertical-align: bottom;
+		}
+}
+
+section.journal {
+	background-image: url(../assets/journalbg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #252422;
+	padding: 130px 0;
+}
+
+.galleryLarge {
+	width: 100%;
+	padding-top: 70px;
+		img {
+			width: 33.33%;
+			vertical-align: bottom;
+		}
+}
+
+a.journalButton {
+	color: $BrandPrimary;
+	border: 1px solid $BrandPrimary;
+	padding: 10px 15px;
+	width: 150px;
+	text-decoration: none;
+	margin: 120px auto 0 auto;
+	text-align: center;
+	display: block;
+}
+
+section.reservations {
+	background-image: url(../assets/reservationbg.png);
+	background-repeat: no-repeat;
+	background-color: #F0E9D9;
+	background-position: left;
+	padding: 130px 0;
+}
+
+aside.reservationsSide {
+	width: 25%;
+		p {
+			font-size: 14px;
+		}
+}
+
+.phoneReservation {
+	width: 100%;
+	border: 3px solid $BrandSecondary;
+	position: relative;
+	padding: 30px 0 10px 65px;
+	line-height: 2px;
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			color: $BrandSecondary;
+		}
+}
+
+.phoneReservation:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	left: 4px;
+	bottom: 4px;
+	border: 1px solid $BrandSecondary;
+}
+
+.phoneReservation:after {
+	content: "\f095";
+	font-family: fontawesome;
+	color: $BrandPrimary;
+	font-size: 50px;
+	position: absolute;
+	top: 45px;
+	left: 15px;
+}
+
+.reservationForm {
+	width: 70%;
+	border: 3px solid $BrandSecondary;
+	position: relative;
+	height: 706px;
+}
+
+form.reservation {
+	border: 1px solid $BrandSecondary;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	left: 4px;
+	bottom: 4px;
+	height: 692px;
+}
+
+.reservationForm .formHalf {
+	width: 50%;
+	height: 90px;
+	border: 1px solid $BrandSecondary;
+	padding: 5px 15px;
+	border-radius: 0;
+}
+
+.formFull {
+	width: 100%;
+	height: 90px;
+	border: 1px solid $BrandSecondary;
+	padding: 5px 15px;
+}
+
+.reservationForm .formFull {
+	width: 100%;
+	height: 300px;
+	border: 1px solid $BrandSecondary;
+	padding: 5px 15px;
+}
+
+select.formHalf {
+	appearance: none;
+}
+
+.submitButton {
+	background-image: url(../assets/seal.png);
+	background-repeat: no-repeat;
+	background-position: center left 40px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid $BrandSecondary;
+	padding: 5px 15px;
+	background-color: white;
+	font-weight: bold;
+	color: $BrandSecondary;
+	font-size: 21px;
+}
+
+section.contact {
+	background-image: url(../assets/contactbg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #FDFCF8;
+	margin: 0;
+		h2 {
+			padding-top: 130px;
+		}
+}
+
+.contact .icons {
+	padding: 30px 0 64px 0;
+}
+
+span.bold {
+	font-weight: bold;
+}
+
+.contact i.fa {
+	color: $BrandPrimary;
+}
+
+section.contact .largeColumn {
+	width: 100%;
+	padding: 0 1%;
+}
+
+section.contact .tall {
+	height: 300px;
+}
+
+.contactForm {
+	border: 3px solid $BrandSecondary;
+	padding: 4px;
+}
+
+form.contact {
+	border: 1px solid $BrandSecondary;
+	// position: relative;
+	top: 4px;
+	right: 4px;
+	left: 4px;
+	bottom: 4px;
+}
+
+footer {
+	background-image: url(../assets/footerbg.png);
+	background-repeat: no-repeat;
+	padding: 100px 0;
+	background-position: center;
+	background-size: cover;
+	background-color: #414046;
+	color: white;
+		a {
+			color: $BrandPrimary;
+			text-decoration: none;
+		}	
+}	
+
+footer .smallColumn {
+	text-align: left;
+	margin: 0;
+	padding-top: 0;
+		p {
+			color: white;
+			line-height: 30px;
+		}
+}
+
+footer .smallColumn ul {
+	list-style-type: none;
+}
+
+footer h5 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 25px;
+}
+
+i.fa {
+	padding-right: 10px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1230px){
+	.wrapper {
+		width: 90%;
+	}
+
+	a.phoneNumber {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 940px) {
+	.wrapper {
+		max-width: 870px;
+	}
+
+	// aside.small {
+	// 	width: 230px;
+	// 	// margin-right: 10px;
+	// 	margin-bottom: 30px;
+	// }
+
+	img.cupcake {
+		height: 30%;
+	}
+
+	img.croissant {
+		height: 30%;
+	}
+
+	img.coffee {
+		margin: 0 auto;
+	}
+
+	.menuSection {
+		background-image: url(../assets/menubg-alt.png);
+		background-repeat: no-repeat;
+		background-position: right 60px bottom 50px;
+		background-size: 257px 288px;
+	}
+
+	.menuSection .containerRow {
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 70px;
+			.largeColumn {
+				padding: 60px 10%;
+				width: 80%;
+				margin: 0 auto 50px auto;
+			}
+	}
+
+	section.gallery {
+		padding-bottom: 50px;
+			.containerRow {
+				flex-direction: column;
+					aside.small {
+						width: 100%;
+						padding: 0 0 13px 0;
+						margin-right: 0;
+						margin-bottom: 30px;
+						max-height: 130px;
+					}
+			}
+	}
+
+	div.gallerySmall {
+		width: 100%;
+		padding-bottom: 70px;
+	}
+
+	// aside.small {
+	// 	margin-right: 0;
+	// 	margin-bottom: 30px;
+	// 	height: 0;
+	// }
+
+	aside.small ul li {
+		display: inline-block;
+		margin-right: 3.5%;
+		margin-left: 3.5%;
+		float: left;
+	}
+
+	aside.small ul li:last-of-type {
+		margin-right: 0;
+	}
+
+	a.journalButton {
+		margin-top: 70px;
+	}
+
+	section.journal {
+		background-image: url(../assets/journalbg-alt.png);
+		background-repeat: no-repeat;
+		background-position: top 30px right 46px;
+		padding: 100px 0 80px 0;
+	}
+
+	section.contact {
+		background-image: url(../assets/contactbg-alt.png);
+		background-repeat: no-repeat;
+		background-position: top 100px right -30px;
+	}
+
+	section.contact .containerRow {
+		flex-direction: column;
+			.largeColumn:first-of-type {
+				margin-bottom: 50px;
+			}
+	}
+
+	footer {
+		background-image: url(../assets/footerbg-alt.png);
+		background-repeat: no-repeat;
+		background-position: bottom 30px right 20px;
+		background-size: 463px 374px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	header {
+		height: 500px;
+	}
+
+	.bakerCoffeeText {
+		background-size: 265px 50px;
+			h1 {
+				margin: -30px;
+			}
+	}
+	
+	.headerContent ul {
+		margin: -10px;
+	}
+
+	.headerContent .hours {
+		transform: translateY(-3%);
+			p {
+				font-size: 14px;
+			}
+	}
+
+	p.hoursAddress {
+		padding-top: 100px;
+	}
+
+	// section.overview .smallColumn {
+	// 	width: 100%;
+	// }
+
+	.containerRow {
+		display: column;
+	}
+
+	.smallColumn {
+		width: 100%;
+	}
+
+	section.overview .smallColumn {
+		margin-top: 0;
+		padding: 50px 5% 0 5%;
+			&:first-of-type {
+				padding-top: 150px;
+			}
+	}
+
+	section.overview .smallColumn:last-of-type {
+		margin-bottom: 60px;
+	}
+
+	.headerContent {
+		padding-top: 50px;
+	}
+
+	.hours {
+		background-size: 235px;
+		transform: translateY(-70%);
+	}
+
+	section.about {
+		background-image: url(../assets/aboutbg-alt.png);
+		background-repeat: no-repeat;
+		background-position: top 30px right 15%;
+	}
+
+	section.about .largeColumn {
+		width: 100%;
+	}
+
+	section.gallery .gallerySmall img {
+		width: 50%;
+			&:last-of-type {
+				display: none;
+			}
+	}
+
+	section.journal .galleryLarge img {
+		width: 50%;
+			&:last-of-type {
+				display: none;
+			}
+	}
+
+	section.reservations {
+		padding-top: 100px;
+	}
+
+	section.reservations .containerRow {
+		flex-direction: column;
+	}
+
+	aside.reservationsSide {
+		width: 100%;
+	}
+
+	a.phoneNumber {
+		font-size: 12px;
+	}
+
+	.reservationForm {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.contact h2 {
+		padding-top: 100px;
+	}
+
+	footer .smallColumn h5 {
+		 border-bottom: 1px solid white;
+		 padding-bottom: 4px;
+	}
+
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.menuSection .containerRow .largeColumn {
+		width: 100%;
+		margin: 0 0 50px 0;
+	}
+
+	section.gallery .gallerySmall img {
+		width: 100%;
+		margin-bottom: 20px;
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+	}
+
+	section.journal .galleryLarge img {
+		width: 100%;
+		margin-bottom: 20px;
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+	}
+}

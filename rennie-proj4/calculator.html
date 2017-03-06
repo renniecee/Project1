@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drink Savvy</title>
+	<link type="image/png" href="assets/favicon.png" rel="icon">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Libre+Baskerville:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<p>Drink Savvy</p>
+		<h2>the cocktail calculator</h2>
+	</header>
+		<div class="flex">
+			<div class="choose">
+				<form autocomplete="off">
+					<input id="spirit" list="autocomplete" datalist placeholder="find your spirit" type="text">
+					<datalist id="autocomplete"></datalist>
+					<button type="submit" class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+				<div id="results">
+				</div>
+			</div> <!-- choose -->
+	
+			<div id="cocktailcontainer">
+				<h4>the cocktail</h4>
+				<ul id="cocktail">
+				</ul>
+			<h4 class="tally">Your cocktail costs: <span id="totes"></span></h4>
+			</div>
+		</div> <!-- flex -->
+	</div> <!-- wrapper -->
+	<footer>
+		<a href="http://itsrennie.com">hello! itsrennie.com</a>
+		</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

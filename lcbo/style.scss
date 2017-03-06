@@ -1,0 +1,284 @@
+@import "partials/normalize";
+
+body {
+	background: black;
+	border: 10px solid #846736;
+	width: 100vw;
+	min-height: 100vh;
+	font-family: "Lato", sans-serif;
+	color: white;
+	font-weight: 100;
+	display: none;
+	// padding: 1em 5em;
+}
+
+.start{
+	margin-top: 40px;
+	a{
+	color: #FDB333;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 100;
+	font-size: 14px;
+	font-style: italic;
+	text-decoration: none;
+	&:hover {
+		border-bottom: 1px solid #FDB333;
+	}
+}
+}
+
+::selection {
+	background-color: #846736;
+}
+
+#onLoad {
+	text-align: center;
+	position: relative;
+}
+
+#instructions {
+	max-width: 370px;
+	margin: 0 auto;
+	margin-top: 21vh;
+	h1 {
+		margin-top: 0;
+	}
+}
+
+#instructions ol{
+	padding: 0;
+	li {
+		display: block;
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 3px;
+		line-height: 17px;
+	}
+}
+
+#results {
+	height: 45vh;
+	overflow: scroll;
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 2em 5em;
+}
+
+.flex {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.choose {
+	flex-grow: 1;
+	max-width: 520px;
+	margin-right: 5vw;
+}
+
+p {
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #FDB333;
+	line-height: 16px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	line-height: 70px;
+	color: white;
+	font-size: 65px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 55px;
+	text-align: center;
+	margin-top: 0;
+}
+
+h4 {
+	font-style: italic;
+	font-size: 35px;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+h4.tally {
+		font-size: 16px;
+		font-weight: 100;
+		margin-bottom: 0;
+		margin-top: 50px;
+	}
+
+header {
+	margin-top: 40px;
+}
+
+#results a {
+	color: white;
+	line-height: 34px;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+span.ounces {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 100;
+	font-style: italic;
+	color: #FDB333;
+}
+
+span.pricePerCocktail {
+	color: #FDB333;
+}
+
+button.search {
+	background: none;
+	border: none;
+	position: relative;
+	right: 45px;
+	color: white;
+}
+
+#spirit {
+	border: 1px solid white;
+	border-radius: 3px;
+	height: 40px;
+	width: 300px;
+	padding-left: 10px;
+	background: black;
+	position: relative;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 100;
+	font-size: 13px;
+	font-style: italic;
+	color: white;
+}
+
+#cocktailcontainer {
+	flex-grow: 2;
+	background: #191205;
+	border-radius: 3px;
+	padding: 50px 40px;
+	max-width: 460px;
+}
+
+ul#cocktail {
+	min-height: 50px;
+	list-style:none;
+	display:block;
+	li {
+		display: block;
+		border-bottom: 1px solid white;
+		max-width: 500px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 11px;
+	}
+}
+
+ul#cocktail {
+	padding: 0;
+}
+
+input.volume {
+	max-width: 60px;
+	border: none;
+	border-radius: 3px;
+	padding: 8px 0 8px 0;
+	background: #191205;
+	color: #FDB333;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 24px;
+	font-style: italic;
+}
+
+footer {
+	// position: fixed;
+	padding: 40px 0 40px 0;
+	text-align: center;
+	// bottom: 40px;
+	width: 100%;
+	a {
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	color: #FDB333;
+	padding-bottom: 5px;
+	&:hover {
+		border-bottom: 1px solid white;
+	}
+	}	
+}
+
+@media (max-width: 820px){
+.flex {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#spirit {
+	width: 100%;
+}
+
+.choose {
+	width: 100%;
+	margin-right: 0;
+	max-width: none;
+}
+
+button.search {
+	left: 92%;
+	bottom: 33px;
+}
+
+
+#results {
+	height: auto;
+	margin-bottom: 40px;
+}
+
+#cocktailcontainer {
+	width: 100%;
+	max-width: none;
+}
+
+}
+
+@media (max-width: 510px) {
+.wrapper {
+	padding: 1em 2em;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+}
+
+#onLoad {
+	padding: 0 2em 0 2em;
+}
+}
